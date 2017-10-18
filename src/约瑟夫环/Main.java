@@ -1,4 +1,4 @@
-package Ô¼Éª·ò»·;
+package çº¦ç‘Ÿå¤«ç¯;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -6,28 +6,28 @@ import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
-		/* ÊäÈën/m */
+		/* è¾“å…¥n/m */
 		int n = 10;
 		int m = 3;
-		/* ÊäÈë´Ó1-M¼ÆÊı */
+		/* è¾“å…¥ä»1-Mè®¡æ•° */
 		int toM = 1;
-		/* ×îºóÊ£ÓàµÄÊı */
+		/* æœ€åå‰©ä½™çš„æ•° */
 		int number;
-		/* Éú³É¼¯ºÏ */
+		/* ç”Ÿæˆé›†åˆ */
 		List<Integer> list = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
 			list.add(i);
 		}
 		Integer current;
-		/* µ±¼¯ºÏÔªËØÊıÁ¿´óÓÚ1Ê±: */
+		/* å½“é›†åˆå…ƒç´ æ•°é‡å¤§äº1æ—¶: */
 		do {
-			/* ½«µ±Ç°¼¯ºÏÔªËØÊıÁ¿×öµü´ú */
+			/* å°†å½“å‰é›†åˆå…ƒç´ æ•°é‡åšè¿­ä»£ */
 			Iterator<Integer> it = list.iterator();
 			do {
-				/* µü´ú */
+				/* è¿­ä»£ */
 				current = it.next();
 				number = current;
-				/* 1-mÑ­»·¼ÆÊı */
+				/* 1-må¾ªç¯è®¡æ•° */
 				if (toM == m) {
 					toM = 1;
 					it.remove();
